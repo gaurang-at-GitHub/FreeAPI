@@ -28,12 +28,12 @@ function App4() {
        <div>
          <h1>Quotes</h1>
          <p>{status}</p>
+         <br></br>
             {quotes.map((quote, index)=>(
-                <div key={index}>
-                  <li>
-                    <p>{quote.content}</p>
-                    <p>{quote.author}</p>
-                    </li>
+                <div key={index} style={{ display: "flex", flexDirection:"column", gap:"20px", textAlign: "left", border:"1px solid", borderRadius:"8px", padding: "20px", marginBottom:"20px", backgroundColor: "#171717"}}>
+                    <p style={{ margin: 0, fontSize: "16px" }}>{quote.content}</p>
+                    <p style={{ margin: 0, color: "#a3a3a3", fontStyle: "italic" }}>-{quote.author}</p>
+                    <br></br>
                 </div>
             ))}
  
