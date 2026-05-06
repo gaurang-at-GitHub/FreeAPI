@@ -1,4 +1,4 @@
-# ChaiCode Assignments Portfolio
+# FreeAPI Portfolio
 
 Welcome to my project repository! Below are the individual projects, along with direct links to their source code and live deployments.
 
