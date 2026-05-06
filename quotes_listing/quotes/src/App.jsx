@@ -25,17 +25,19 @@ function App4() {
   }, []);
 
   return (
-    <div>
-      <h1>Quotes</h1>
-      <p>{status}</p>
-      
-      {quotes.map((quote, index) => (
-        <div key={index} style={{ borderBottom: "1px solid black", padding: "10px 0" }}>
-          <p>"{quote.content}"</p>
-          <p><strong>- {quote.author}</strong></p>
-        </div>
-      ))}
-    </div>
+       <div>
+         <h1>Quotes</h1>
+         <p>{status}</p>
+            {quotes.map((quote, index)=>(
+                <div key={index}>
+                  <li>
+                    <p>{quote.content}</p>
+                    <p>{quote.author}</p>
+                    </li>
+                </div>
+            ))}
+ 
+       </div>
   );
 }
 
